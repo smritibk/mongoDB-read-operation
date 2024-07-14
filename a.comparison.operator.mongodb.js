@@ -6,7 +6,7 @@ use("kec-crude");
 //* $eq
 //? find movie whose name is "Glee"
 //? name==="Glee"
-// db.movies.find({ name: { $eq: "Glee" } }, { name: 1, _id: 0, genres: 1 });
+db.movies.find({ name: { $eq: "Glee" } }, { name: 1, _id: 0, genres: 1 });
 
 //?equivalent code
 // db.movies.find({ name: "Glee" }, { name: 1 });
